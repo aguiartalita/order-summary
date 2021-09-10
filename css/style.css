@@ -1,0 +1,172 @@
+:root {
+    --azul-bebe: hsl(225, 100%, 94%);
+    --azul-brilhante: hsl(245, 75%, 52%);
+    --azul-claro: hsl(225, 100%, 98%);
+    --azul-mais-claro: hsl(224, 23%, 55%);
+    --azul-escuro: hsl(223, 47%, 23%);
+    --red-hat-display: 'Red hat display', sans-serif;
+}
+
+body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--azul-bebe);
+    background-size: contain;
+    width: 100vw;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--red-hat-display);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.main__container {
+    background-color: white;
+    align-items: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 2em;
+    border-radius: 30px;
+}
+
+.cabecalho__container {
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho__container--imagem {
+    width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.informacoes__titulo {
+    text-align: center;
+    font-weight: 700;
+    color: var(--azul-escuro);
+}
+
+.informacoes__texto {
+    text-align: center;
+    letter-spacing: 1.2px;
+    padding: 1rem;
+    color: var(--azul-mais-claro);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.planos__container {
+    background-color: var(--azul-claro);
+    border: 2px solid var(--azul-claro);
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-betweenmn;
+    padding-left: 0.5em;
+}
+
+.planos__imagem-musica {
+    padding-right: 1rem;
+    margin-top: 1.5em;
+}
+
+.planos__titulo {
+    font-weight: 700;
+    background-color: var(--azul-escuro);
+    margin-bottom: 0.1rem;
+    font-size: 1rem;
+}
+h2 {
+    font-size: 1rem;
+}
+.planos__informacoes {
+    color: var(--azul-mais-claro);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.planos__botao {
+    margin-top: 3rem;
+}
+
+a {
+    padding-left: 1em;
+    text-align: center;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--azul-brilhante);
+
+}
+
+.planos__botao--pagamento {
+    font-family: var(--red-hat-display);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: var(--azul-brilhante);
+    color: var(--azul-bebe);
+    border-style: none;
+    border-radius: 10px;
+    width: 85%;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 1rem 1.2rem var(--azul-brilhante);
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.planos__botao--cancelamento {
+    font-family: var(--red-hat-display);
+    font-weight: bolder;
+    font-size:1.1rem;
+    color: var(--azul-mais-claro);
+    border-style: none;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.attribution {
+    padding-top: 5rem;
+    font-size: 11px;
+    text-align: center;
+    font-family: var(--red-hat-display);
+    letter-spacing: 0.1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    
+}
+
+@media screen and (min-width:1024px){
+    .main__container{
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+       width: 400px;
+    }
+    .informacoes__texto{
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+    .planos__container{
+        min-width: 85%;
+      
+    }
+    
+    
+} 
